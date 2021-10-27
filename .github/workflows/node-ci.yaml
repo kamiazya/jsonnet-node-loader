@@ -1,0 +1,37 @@
+name: NodeCI
+
+on: [push]
+
+jobs:
+  test:
+    name: Test on node ${{ matrix.node-version }} and ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x, 16.x]
+        os: [ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install dependencies
+      run: yarn --frozen-lockfile --ignore-optional
+      env:
+        CI: 'true'
+    - name: Setup cmake
+      uses: jwlawson/actions-setup-cmake@v1.9
+    - name: Build
+      run: yarn build
+      env:
+        CI: 'true'
+    - name: Lint
+      run: yarn lint
+      env:
+        CI: 'true'
+    - name: Test
+      run: yarn test
+      env:
+        CI: 'true'
