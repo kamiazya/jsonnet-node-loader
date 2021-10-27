@@ -5,13 +5,13 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/kamiazya/jsonnet-node-loader)
 
-# jsonnet-loader
+# jsonnet-node-loader
 
 A [loader](https://nodejs.org/api/esm.html#loaders) that allows Node.js to import [Jsonnet](https://jsonnet.org/) settings directly from an ESModule file.
 
 ## Features
 
-- Support `.jsonnet` file
+- Support importing `.jsonnet` file
 
 ## Installation
 
