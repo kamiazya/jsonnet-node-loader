@@ -1,0 +1,34 @@
+{
+  "name": "jsonnet-node-loader",
+  "version": "0.0.0",
+  "type": "module",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    "import": "./lib/index.js"
+  },
+  "scripts": {
+    "build": "rollup -c && prettier --write ./lib/*",
+    "format": "eslint -c .eslintrc.json --ext ts src --fix && prettier --write './src/**/*.ts'",
+    "lint": "eslint -c .eslintrc.json --ext ts src"
+  },
+  "repository": "https://github.com/kamiazya/jsonnet-loader",
+  "author": "kamiazya <yuki@kamiazya.tech>",
+  "license": "MIT",
+  "dependencies": {
+    "@hanazuki/node-jsonnet": "^0.4.2",
+    "query-string": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
+    "rollup": "^2.58.3",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.4.4"
+  }
+}
