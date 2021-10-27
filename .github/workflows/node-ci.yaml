@@ -8,7 +8,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [14.x, 16.x]
         os: [ubuntu-latest]
 
     steps:
@@ -21,8 +21,6 @@ jobs:
       run: yarn --frozen-lockfile --ignore-optional
       env:
         CI: 'true'
-    - name: Setup cmake
-      uses: jwlawson/actions-setup-cmake@v1.9
     - name: Build
       run: yarn build
       env:
