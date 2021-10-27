@@ -12,8 +12,12 @@ const options = [
     ],
     output: [
       {
-        format: 'esm',
+        format: 'cjs',
         file: './lib/index.js',
+      },
+      {
+        format: 'esm',
+        file: './lib/index.mjs',
       },
     ],
   },

@@ -1,6 +1,7 @@
 {
   "parser": "@typescript-eslint/parser",
   "env": {
+    "jest": true
   },
   "settings": {
     "import/resolver": {
