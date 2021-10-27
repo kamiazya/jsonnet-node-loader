@@ -11,7 +11,7 @@
     "format": "eslint -c .eslintrc.json --ext ts src --fix && prettier --write './src/**/*.ts'",
     "lint": "eslint -c .eslintrc.json --ext ts src"
   },
-  "repository": "https://github.com/kamiazya/jsonnet-loader",
+  "repository": "https://github.com/kamiazya/jsonnet-node-loader",
   "author": "kamiazya <yuki@kamiazya.tech>",
   "license": "MIT",
   "dependencies": {
