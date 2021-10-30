@@ -1,6 +1,6 @@
 {
   "name": "jsonnet-node-loader",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A loader that allows Node.js to import Jsonnet settings from an ESModule file.",
   "homepage": "https://kamiazya.github.io/jsonnet-node-loader/",
   "main": "./lib/index.js",
