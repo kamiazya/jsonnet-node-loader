@@ -7,7 +7,7 @@
 
 # jsonnet-node-loader
 
-A [loader](https://nodejs.org/api/esm.html#loaders) that allows Node.js to import [Jsonnet](https://jsonnet.org/) settings directly from an ESModule file.
+A [loader](https://nodejs.org/api/esm.html#loaders) that allows Node.js to import [Jsonnet](https://jsonnet.org/) settings from an ESModule file.
 
 ## Features
 

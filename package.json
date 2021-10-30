@@ -1,7 +1,12 @@
 {
   "name": "jsonnet-node-loader",
   "version": "0.0.2",
+  "description": "A loader that allows Node.js to import Jsonnet settings from an ESModule file.",
+  "homepage": "https://kamiazya.github.io/jsonnet-node-loader/",
   "main": "./lib/index.js",
+  "bugs": {
+    "url": "https://github.com/kamiazya/jsonnet-node-loader/issues"
+  },
   "exports": {
     "import": "./lib/index.mjs"
   },
@@ -11,7 +16,14 @@
     "format": "eslint -c .eslintrc.json --ext ts src --fix && prettier --write './src/**/*.ts'",
     "lint": "eslint -c .eslintrc.json --ext ts src"
   },
-  "repository": "https://github.com/kamiazya/jsonnet-node-loader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kamiazya/jsonnet-node-loader"
+  },
+  "keywords": [
+    "jsonnet",
+    "node-loader"
+  ],
   "author": "kamiazya <yuki@kamiazya.tech>",
   "license": "MIT",
   "dependencies": {
